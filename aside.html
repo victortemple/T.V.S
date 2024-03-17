@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[as]</title>
+</head>
+<body>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            color: #eeeeee;
+            background: #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #textElement{
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .asBox{
+            width: 14rem;
+            height: 7rem;
+            margin: auto;
+            margin-block: 20rem;
+            text-align: center;
+        }
+
+        .as{
+            font-size: 2.4rem;
+        }
+
+    </style>
+
+    <div class="asBox">
+        <p id="textElement">[as]</p>
+    <span class="as"></span>
+    </div>
+
+ 
+
+    <script>
+        
+        
+
+        var textValues = [
+          "[𝚊𝚜]",
+          "[𝙖𝙨]",
+          "[𝖺𝗌]",
+          "[𝗮𝘀]",
+          "[𝔞𝔰]",
+          "[𝓪𝓼]",
+          "[𝑎𝑠]",
+          "[𝗔𝗦]",
+          "[𝘈𝘚]",
+          "[𝙰𝚂]",
+          "[𝐴𝑆]",
+          "[𝔸𝕊]",
+          "[𝒜𝓈]",
+          "[𝕒𝓈]",
+          "[𝖆𝗌]",
+          "[𝗔𝗦]",
+          "[𝗮𝘀]",
+          "[𝔞𝔰]",
+          "[𝓪𝓼]",
+          "[𝑎𝑠]",
+          "[𝗔𝗦]",
+          "[𝘈𝘚]",
+          "[𝙰𝚂]",
+          "[𝐴𝑆]",
+          "[𝔸𝕊]"    
+        ];
+      
+        
+        function changeText() {
+          var textElement = document.getElementById("textElement");
+         
+          var i = 0;
+          setInterval(function() {
+            textElement.textContent = textValues[i];
+            i = (i + 1) % textValues.length; 
+          }, 100); 
+        }
+      
+       
+        window.onload = changeText;
+
+        
+        let asTxt = document.querySelector('.as');
+        const chngeTxt = () => {
+
+            setTimeout(function(){
+                asTxt.textContent = '[';
+            }, 9800)
+
+            setTimeout(function(){
+                asTxt.textContent = '[]'
+            }, 10600)
+
+            setTimeout(function(){
+                asTxt.textContent = '[adult swim]'
+            }, 11200)
+
+        }
+
+        setInterval(chngeTxt, 2800);
+
+        chngeTxt();
+      </script>
+      
+</body>
+</html>

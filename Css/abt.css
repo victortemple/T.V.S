@@ -1,0 +1,120 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-block: 17rem;
+}
+
+color{
+    color: #eeeeee;
+    color: #F0CF90;
+    color: #786748;
+    color: #332C1E;
+}
+
+.txt{
+    padding-right: 20%;
+}
+
+.txt h2{
+    font-size: 4.4rem;
+    text-transform: capitalize;
+}
+
+.txt h2 span{
+    font-size: 4.6rem;
+    color: #F0CF90;
+}
+
+.skillsBox h3{
+    font-size: 3.6rem;
+    text-transform: capitalize;
+    margin-bottom: 1.4rem;
+}
+
+.sklCon{
+    display: grid;
+    grid-template-columns: repeat(2, 30rem);
+}
+
+.sklCon .skill{
+    font-size: 2.4rem;
+    padding: 1rem;
+    color: #F0CF90;
+    animation: chngclr 0.5s linear infinite;
+}
+
+@keyframes chngclr {
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media(max-width: 1440px){
+    .content{
+        padding-inline: 1.8rem;
+        margin-block: 14rem;
+    }
+}
+
+@media(max-width: 1024px){
+    .txt h2{
+        font-size: 3.2rem;
+    }
+
+    .txt h2 span{
+        font-size: 3.6rem;
+    }
+
+    .skillsBox h3{
+        font-size: 2.8rem;
+    }
+
+    .sklCon .skill{
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 768px){
+    .txt{
+        padding-right: 0;
+    }
+
+    .sklCon {
+        grid-template-columns: repeat(2, 20rem);
+    }
+
+}
+
+@media(max-width: 431px){
+    .txt h2,
+    .skillsBox h3{
+        font-size: 2.6rem;
+    }
+
+    .txt h2 span{
+        font-size: 2.8rem;
+    }
+
+    .sklCon {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media(max-width: 329px){
+    
+    .content{
+        padding-inline: 1rem;
+    }
+
+    .sklCon .skill{
+        font-size: 1.6rem;
+        padding: 0;
+    }
+
+    .sklCon {
+       row-gap: 1.8rem;
+    }
+}
